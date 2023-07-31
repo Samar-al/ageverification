@@ -1,0 +1,55 @@
+
+/* Styles for the age verification pop-up container */
+  .age-verification-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  /* Styles for the age verification pop-up content */
+  .age-verification-container p.description {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .age-verification-container img.logo {
+    display: block;
+    max-width: 100px; /* Set the maximum width of the logo */
+    height: auto;
+    margin: 0 auto 15px;
+  }
+  
+  .age-verification-container .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+  }
+  
+  .age-verification-container button {
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 1rem;
+  }
+  
+  /* Styles for the "I'm under 18" button */
+  .age-verification-container #age-verification-no {
+    background-color: '{$AGE_VERIFICATION_BUTTON_COLOR}';
+  }
+  
+  /* Styles for the "I'm 18 or older" button */
+  .age-verification-container #age-verification-yes {
+    background-color: '{$AGE_VERIFICATION_BUTTON_COLOR}';
+  }
+  
